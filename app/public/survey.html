@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+           body,html {
+                margin:0;
+                padding:0;
+            }
+            header {
+                margin:0;
+            }
+            .title {
+                text-align: center;
+                margin-top: 0;
+                padding-top:10px;
+        
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-extended">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <h1 class="title">idolFinder</h1>
+                        <div class="nav-content">
+                            <ul class="tabs tabs-transparent">
+                                <li class="tab"><a href="#">Home</a></li>
+                                <li class="tab"><a class="active" href="#survey">Survey</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <h2>Survey Questions</h2>
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="First Name (Required)" id="first_name" type="text" class="validate">
+                            <label for="first_name"></label>
+                        </div>
+                    </div>
+                    <div clas="row">     
+                        <div class="input-field col s6">
+                            <input placeholder="Link to Photo Image (Required)" id="photo" type="url" class="validate">
+                            <label for="photo"></label>
+                        </div>
+                    </div>
+ 
+                </form>
+
+            </div>
+            <div class="divider"></div>
+          
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3>Question1</h3>
+                            <p>the question</p>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">1 Strongly Agree</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3>Question2</h3>
+                            <p class="question">the question</p>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">1 Strongly Agree</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3>Question3</h3>
+                            <p>test</p>
+                              <div class="input-field col s6">
+                                  <select>
+                                      <option value="" disabled selected>Choose your option</option>
+                                      <option value="1">1 Strongly Agree</option>
+                                      <option value="2">Option 2</option>
+                                      <option value="3">Option 3</option>
+                                  </select>
+                                  <label>Materialize Select</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3>Question4</h3>
+                            <p class="question">the question</p>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">1 Strongly Agree</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h3>Question5</h3>
+                            <p class="question">the question</p>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">1 Strongly Agree</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                        </div>
+                     </div>
+                </form>
+            </div>
+        </div><!--end container-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('select').material_select();
+            });
+        </script>
+    </body>
+
+</html>
