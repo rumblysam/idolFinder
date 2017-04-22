@@ -10,7 +10,7 @@ I used Materialize for this project.
 
 - My first steps were to create the static content and the landing page (home.html).
 - Then I started building the survey.html page.
--- Then I added click function for the home/survey pages:
+    - Then I added click function for the home/survey pages:
 
 ```
 $("#home-nav").on("click", function(){
