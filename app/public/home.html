@@ -42,10 +42,19 @@
         <div class="container">
             <h2>Get Paired With An Idol!</h2>
             <p>Just answer a few quick questions!</p>
-            <a class="waves-effect waves-light btn" href="#">Take Survey!</a>
+            <a id="survey-btn"class="waves-effect waves-light btn">Take Survey!</a>
         </div>
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+               $("#survey-btn").on("click", function(){
+                window.location.href = "./survey.html"; 
+               })
+
+            });
+        </script>
     </body>
 
 </html>

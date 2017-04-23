@@ -22,6 +22,13 @@
                 padding-top:10px;
         
             }
+            .survey-input {
+                padding:0;
+                margin:0;
+            }
+            .question {
+                padding-left: 10px;
+            }
         </style>
     </head>
     <body>
@@ -32,8 +39,8 @@
                         <h1 class="title">idolFinder</h1>
                         <div class="nav-content">
                             <ul class="tabs tabs-transparent">
-                                <li class="tab"><a href="#">Home</a></li>
-                                <li class="tab"><a class="active" href="#survey">Survey</a></li>
+                                <li class="tab"><a id="home-nav">Home</a></li>
+                                <li class="tab"><a class="active" href="./survey.html">Survey</a></li>
                             </ul>
                         </div>
                     </div>
@@ -53,7 +60,7 @@
                             <label for="first_name"></label>
                         </div>
                     </div>
-                    <div clas="row">     
+                    <div class="row survey-input">     
                         <div class="input-field col s6">
                             <input placeholder="Link to Photo Image (Required)" id="photo" type="url" class="validate">
                             <label for="photo"></label>
@@ -70,15 +77,17 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <h3>Question1</h3>
-                            <p>the question</p>
+                            <p class="question">the question</p>
                             <div class="input-field col s6">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">1 Strongly Agree</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
+                                    <option value="1">1 Strongly Disagree</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5 Strongly Agree</option>
                                 </select>
-                                <label>Materialize Select</label>
+                                <!--<label>Materialize Select</label>-->
                             </div>
                         </div>
                     </div>
@@ -89,26 +98,30 @@
                             <div class="input-field col s6">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">1 Strongly Agree</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
+                                    <option value="1">1 Strongly Disagree</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5 Strongly Agree</option>
                                 </select>
-                                <label>Materialize Select</label>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <h3>Question3</h3>
-                            <p>test</p>
+                            <p class="question">question</p>
                               <div class="input-field col s6">
                                   <select>
                                       <option value="" disabled selected>Choose your option</option>
-                                      <option value="1">1 Strongly Agree</option>
-                                      <option value="2">Option 2</option>
-                                      <option value="3">Option 3</option>
+                                      <option value="1">1 Strongly Disagree</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="3">5 Strongly Agree</option>
                                   </select>
-                                  <label>Materialize Select</label>
+                                  
                               </div>
                         </div>
                     </div>
@@ -119,11 +132,12 @@
                             <div class="input-field col s6">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">1 Strongly Agree</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5 Strongly Agree</option>
                                 </select>
-                                <label>Materialize Select</label>
+                               
                             </div>
                         </div>
                      </div>
@@ -134,11 +148,12 @@
                             <div class="input-field col s6">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">1 Strongly Agree</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5 Strongly Agree</option>
                                 </select>
-                                <label>Materialize Select</label>
+                                
                             </div>
                         </div>
                      </div>
@@ -149,6 +164,10 @@
         <script>
             $(document).ready(function() {
                 $('select').material_select();
+
+                $("#home-nav").on("click", function(){
+                    window.location.href = "./home.html";
+                })
             });
         </script>
     </body>
