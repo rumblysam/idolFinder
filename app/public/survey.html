@@ -8,28 +8,8 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <style>
-           body,html {
-                margin:0;
-                padding:0;
-            }
-            header {
-                margin:0;
-            }
-            .title {
-                text-align: center;
-                margin-top: 0;
-                padding-top:10px;
         
-            }
-            .survey-input {
-                padding:0;
-                margin:0;
-            }
-            .question {
-                padding-left: 10px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <header>
@@ -77,15 +57,15 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <h3>Question1</h3>
-                            <p class="question">the question</p>
+                            <p class="question">Your ideal type has this feature:</p>
                             <div class="input-field col s6">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">1 Strongly Disagree</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5 Strongly Agree</option>
+                                    <option value="5">Eye Smile</option>
+                                    <option value="2">Small Face</option>
+                                    <option value="3">Big Eyes</option>
+                                    <option value="4">Dimples</option>
+                                    <option value="1">Small Eyes</option>
                                 </select>
                                 <!--<label>Materialize Select</label>-->
                             </div>
@@ -159,6 +139,9 @@
                      </div>
                 </form>
             </div>
+            <button id="submit"class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
         </div><!--end container-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
         <script>
